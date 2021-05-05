@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar class="backgroud-element-style">
+    <ion-title>Inicio</ion-title>
+    <ion-menu-button slot="end"></ion-menu-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="backgroud-style card-background-page">
+
+  <ion-card>
+    <ion-img src="../../../assets/img/logo_colombia_taxis.png"></ion-img>
+        <ion-label  style="--background: transparent;" style="white-space:pre-line;">
+          <ion-text color="light">
+            Plataforma movil para la administración de 
+            <ion-text color="warning">
+              taxis.
+            </ion-text>
+             Por medio de ella podrá registrar tarifas y gastos para conocer la 
+            <ion-text color="success">
+              rentabilidad de sus vehículos,
+            </ion-text>
+              teniendo la posibilidad de realizar controles, comparaciones y mediciones, que le permitirá tomar 
+            <ion-text color="warning">
+              decisiones
+            </ion-text>  
+            frente al manejo. Además de tener siempre 
+            <ion-text color="warning">
+              a la mano
+            </ion-text>  
+              la información detallada de los vehículos, conductores, proveedores, documentos, consignaciones y hasta duración de repuestos por tiempo y Km.
+          </ion-text>
+        </ion-label>
+  </ion-card>
+
+  <ion-button class="btn-style" (click)="modulos()" color="medium" expand="block" shape="round">
+    CONOCE MÁS
+  </ion-button>
+
+  <ion-menu side="start" type="push" contentId="main">
+
+    <ion-header class="backgroud-element-style">
+      <ion-toolbar class="toolbar-style" >
+        <ion-title>
+          <img src="../../../assets/img/logo_colombia_taxis.png" alt="">
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="backgroud-element-style">
+      <ion-list class="list-style">
+
+        <!-- <ion-item (click)="inicio()" lines="full">
+          <ion-icon slot="start" name="arrow-forward-circle-outline"></ion-icon>
+          Inicio
+        </ion-item> -->
+        <ion-item (click)="modulos()" lines="full">
+          <ion-icon slot="start" name="newspaper-outline"></ion-icon>
+          Modulos
+        </ion-item>
+        <ion-item (click)="contactenos()" lines="full">
+          <ion-icon slot="start" name="call-outline"></ion-icon>
+          Contáctenos
+        </ion-item>
+        <ion-item (click)="tarifas()" lines="full">
+          <ion-icon slot="start" name="cash-outline"></ion-icon>
+          Tarifas
+        </ion-item>
+        <ion-item (click)="picoPlaca()" lines="full">
+          <ion-icon slot="start" name="car-sport-outline"></ion-icon>
+          Pico y Placa
+        </ion-item>
+        <ion-item (click)="ingresar()" lines="full">
+          <ion-icon slot="start" name="log-in-outline"></ion-icon>
+          Ingresar
+        </ion-item>
+        
+      </ion-list>
+    </ion-content>
+  
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+  
+</ion-content>

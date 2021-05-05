@@ -3,13 +3,33 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: '',
+    redirectTo: 'menu',
+    pathMatch: 'full'
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: 'menu',
+    loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
+  },
+  {
+    path: 'modulos',
+    loadChildren: () => import('./pages/modulos/modulos.module').then( m => m.ModulosPageModule)
+  },
+  {
+    path: 'contactenos',
+    loadChildren: () => import('./pages/contactenos/contactenos.module').then( m => m.ContactenosPageModule)
+  },
+  {
+    path: 'ingresar',
+    loadChildren: () => import('./pages/ingresar/ingresar.module').then( m => m.IngresarPageModule)
+  },
+  {
+    path: 'pico-placa',
+    loadChildren: () => import('./pages/pico-placa/pico-placa.module').then( m => m.PicoPlacaPageModule)
+  },
+  {
+    path: 'tarifas',
+    loadChildren: () => import('./pages/tarifas/tarifas.module').then( m => m.TarifasPageModule)
   },
 ];
 
