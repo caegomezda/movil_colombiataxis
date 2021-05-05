@@ -1,0 +1,7 @@
+{
+  "name": "movilColombiaTaxis",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
