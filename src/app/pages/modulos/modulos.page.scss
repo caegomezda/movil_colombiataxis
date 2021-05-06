@@ -43,19 +43,26 @@ ion-slides {
     h1{
         color: white;
         font-weight: bold;
+        display: flex;
+        justify-content: center;
     }
     ion-label{
+        // padding-bottom: 50px;
         white-space: normal;
         color: white;
         text-align: justify;
     }
     ion-list{
         --background: transparent;
-        padding:50px;
-        margin: 25px;
+        padding: 10px;
+        margin: 10px;
     }
     ion-item{
         --background: transparent;
+    }
+    img{
+        margin: 30px 0px 10px 0px;
+        padding: 0px 50px 30px 50px;
     }
 }
 
@@ -66,4 +73,9 @@ ion-slides {
 
 .slides-md{
     --bullet-background-active: white;
+}
+
+.div-style{
+    display: flex !important;
+    justify-content: center !important;
 }

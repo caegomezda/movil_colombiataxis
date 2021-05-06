@@ -9,7 +9,6 @@
 </ion-header>
 
 <ion-content class=" backgroud-style card-background-page">
-
   <ion-list>
 
       <ion-item lines="full">
@@ -57,56 +56,72 @@
         </ion-label>
       </ion-item>
 
-  </ion-list>
-
-  <ion-list>
-    <ion-label>
-      formulario
-    </ion-label>
-  </ion-list>
-
-  <!-- <ion-menu side="start" type="push" contentId="main">
-
-    <ion-header class="backgroud-element-style">
-      <ion-toolbar class="toolbar-style" >
-        <ion-title>
-          <img src="../../../assets/img/logo_colombia_taxis.png" alt="">
-        </ion-title>
-      </ion-toolbar>
-    </ion-header>
-
-    <ion-content class="backgroud-element-style">
-      <ion-list class="list-style">
-
-        <ion-item (click)="inicio()" lines="full">
-          <ion-icon slot="start" name="arrow-forward-circle-outline"></ion-icon>
-          Inicio
-        </ion-item>
-        <ion-item (click)="modulos()" lines="full">
-          <ion-icon slot="start" name="newspaper-outline"></ion-icon>
-          Modulos
-        </ion-item>
-        <ion-item (click)="contactenos()" lines="full">
-          <ion-icon slot="start" name="call-outline"></ion-icon>
+    <ion-item lines="full">
+      <ion-label>
+        <h1>
           Contáctenos
-        </ion-item>
-        <ion-item (click)="tarifas()" lines="full">
-          <ion-icon slot="start" name="cash-outline"></ion-icon>
-          Tarifas
-        </ion-item>
-        <ion-item (click)="picoPlaca()" lines="full">
-          <ion-icon slot="start" name="car-sport-outline"></ion-icon>
-          Pico y Placa
-        </ion-item>
-        <ion-item (click)="ingresar()" lines="full">
-          <ion-icon slot="start" name="log-in-outline"></ion-icon>
-          Ingresar
-        </ion-item>
-        
-      </ion-list>
-    </ion-content>
-  
-  </ion-menu>
+        </h1>
+      </ion-label>
+      <ion-button color="medium" (click)="onClick()"  shape="round">
+        Enviar
+      </ion-button>
+    </ion-item>
 
-  <ion-router-outlet id="main"></ion-router-outlet> -->
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-label>Nombre</ion-label>
+          <ion-input type="text" placeholder="">
+          </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-label>Teléfono</ion-label>
+          <ion-input type="text" placeholder="">
+          </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+          <ion-item lines="none">
+            <ion-label>Correo</ion-label>
+            <ion-input type="text" placeholder="">
+            </ion-input>
+          </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-label>Mensaje</ion-label>
+          <ion-input type="text" placeholder="">
+          </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  <!-- </ion-item> -->
+
+  </ion-list>
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+
+    <ion-fab-button color="light">
+      <ion-icon name="chevron-down-circle-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="bottom">
+      <ion-fab-button (click)="facebook()" color="primary"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+      <ion-fab-button (click)="instagram()" color="danger"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+      <ion-fab-button (click)="whatsapp()" color="success"><ion-icon name="logo-whatsapp"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
 </ion-content>

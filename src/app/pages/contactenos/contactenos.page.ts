@@ -13,28 +13,19 @@ export class ContactenosPage implements OnInit {
   ngOnInit() {
   }
 
-  // inicio(){
-  //   this.router.navigate(['/menu'])
-  // }
+  facebook(){
+    // this.facebook_url.show();
+    window.open('https://www.facebook.com/colombiataxis');
+  }
 
-  // modulos(){
-  //   this.router.navigate(['/modulos'])
-  // }
+  instagram(){
+    // this.instagram_url.show();
+    window.open('https://www.instagram.com/colombiataxis/');
+  }
 
-  // contactenos(){
-  //   this.router.navigate(['/contactenos'])
-  // }
-
-  // picoPlaca(){
-  //   this.router.navigate(['/pico-placa'])
-  // }
-
-  // tarifas(){
-  //   this.router.navigate(['tarifas'])
-  // }
-
-  // ingresar(){
-  //   this.router.navigate(['ingresar'])
-  // }
+  whatsapp(){
+    // this.whatsapp_url.show();
+    window.open('https://api.whatsapp.com/send?phone=+573504117000&text=Hola quiero conocer más acerca de ustedes');
+  }
 
 }

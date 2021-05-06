@@ -48,15 +48,23 @@
         // white-space: normal;
         color: white;
         text-align: justify;
+        width: 70px;
     }
     ion-list{
         --background: transparent;
         padding:25px;
-        margin: 25px;
+        margin: 0px;
     }
     ion-item{
         --background: transparent;
+        --border-color: white;
         padding: 0px;
+    }
+    ion-input{
+        --background: white;
+        margin-left: 10px ;
+        font-size: 12px;
+        border-radius: 50px;
     }
 }
 

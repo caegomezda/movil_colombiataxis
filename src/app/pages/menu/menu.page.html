@@ -9,7 +9,7 @@
 
   <ion-card>
     <ion-img src="../../../assets/img/logo_colombia_taxis.png"></ion-img>
-        <ion-label  style="--background: transparent;" style="white-space:pre-line;">
+        <ion-label>
           <ion-text color="light">
             Plataforma movil para la administración de 
             <ion-text color="warning">
@@ -31,10 +31,23 @@
           </ion-text>
         </ion-label>
   </ion-card>
+      
+      <!-- <ion-button class="btn-style" (click)="modulos()" color="medium" expand="block" shape="round">
+        CONOCE MÁS
+      </ion-button> -->
 
-  <ion-button class="btn-style" (click)="modulos()" color="medium" expand="block" shape="round">
-    CONOCE MÁS
-  </ion-button>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+
+    <ion-fab-button color="light">
+      <ion-icon name="chevron-up-circle-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="facebook()" color="primary"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+      <ion-fab-button (click)="instagram()" color="danger"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+      <ion-fab-button (click)="whatsapp()" color="success"><ion-icon name="logo-whatsapp"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 
   <ion-menu side="start" type="push" contentId="main">
 
@@ -55,24 +68,42 @@
         </ion-item> -->
         <ion-item (click)="modulos()" lines="full">
           <ion-icon slot="start" name="newspaper-outline"></ion-icon>
-          Modulos
+          <ion-label >
+            Modulos
+          </ion-label>
         </ion-item>
         <ion-item (click)="contactenos()" lines="full">
           <ion-icon slot="start" name="call-outline"></ion-icon>
-          Contáctenos
+          <ion-label>
+            Contáctenos
+          </ion-label>
         </ion-item>
         <ion-item (click)="tarifas()" lines="full">
           <ion-icon slot="start" name="cash-outline"></ion-icon>
-          Tarifas
+          <ion-label>
+            Tarifas
+          </ion-label>
         </ion-item>
-        <ion-item (click)="picoPlaca()" lines="full">
+        <!-- <ion-item (click)="picoPlaca()" lines="full">
           <ion-icon slot="start" name="car-sport-outline"></ion-icon>
-          Pico y Placa
-        </ion-item>
+          <ion-label>
+            Pico y Placa
+          </ion-label>
+        </ion-item> -->
         <ion-item (click)="ingresar()" lines="full">
           <ion-icon slot="start" name="log-in-outline"></ion-icon>
-          Ingresar
+          <ion-label>
+            Ingresar
+          </ion-label>
         </ion-item>
+
+        <ion-item (click)="gps()" lines="full">
+          <ion-icon slot="start" name="locate-outline"></ion-icon>
+          <ion-label>
+            GPS
+          </ion-label>
+        </ion-item>
+
         
       </ion-list>
     </ion-content>

@@ -26,18 +26,32 @@
         --background: #FFC928 !important;
         // color: white;
     }
+    ion-label{       
+        white-space: normal;
+        color: black;
+        text-align: justify;
+    }
 }
 
 .card-background-page {
     ion-card {
         background: transparent;
         text-align: center;
-        padding: 25px 10px 25px 10px;
-        margin: 25px 10px 25px 10px;
+        padding: 5px 10px 25px 10px;
+        margin: 10px 10px 25px 10px;
     }
     ion-img{
         padding: 25px 0px 25px 0px;
         margin: 25px 0px 25px 0px;
+    }
+    ion-label{       
+        white-space: normal;
+        color: black;
+        text-align: justify;
+        font-size: 18px;
+    }
+    ion-icon{
+        color: black;
     }
 }
 
