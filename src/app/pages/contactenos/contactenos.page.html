@@ -10,104 +10,120 @@
 
 <ion-content class=" backgroud-style card-background-page">
   <ion-list>
+    <ion-item lines="full">
+      <ion-label>
+        <h1>
+          Celular
+        </h1>
+        <h3>
+          350 411 7000
+          <ion-icon slot="end" name="logo-whatsapp"></ion-icon>
+        </h3>
+        <h3>
+          317 770 1797
+          <ion-icon slot="end" name="logo-whatsapp"></ion-icon>
+        </h3>
+      </ion-label>
+    </ion-item>
 
-      <ion-item lines="full">
-        <ion-label>
-          <h1>
-            Celular
-          </h1>
-          <h3>
-            350 411 7000
-            <ion-icon slot="end" name="logo-whatsapp"></ion-icon>
-          </h3>
-          <h3>
-            317 770 1797
-            <ion-icon slot="end" name="logo-whatsapp"></ion-icon>
-          </h3>
-        </ion-label>
-      </ion-item>
+    <ion-item lines="full">
 
-      <ion-item lines="full">
-
-        <ion-label>
-          <h1>
-            Correo Electrónico
-          </h1>
-          <h3>
-            comercial@colombiataxis.com
-          </h3>
-          <h3>
-            mercadeo@colombiataxis.com
-          </h3>
-        </ion-label>
-      </ion-item>
-
-      <ion-item lines="full">
-        <ion-label>
-          <h1>
-            Horarios
-          </h1>
-          <h4>
-            8:00 a.m. a 6:00 p.m.
-          </h4>
-          <h4>
-            Lunes a Sábado
-          </h4>
-        </ion-label>
-      </ion-item>
+      <ion-label>
+        <h1>
+          Correo Electrónico
+        </h1>
+        <h3>
+          comercial@colombiataxis.com
+        </h3>
+        <h3>
+          mercadeo@colombiataxis.com
+        </h3>
+      </ion-label>
+    </ion-item>
 
     <ion-item lines="full">
       <ion-label>
         <h1>
-          Contáctenos
+          Horarios
         </h1>
+        <h4>
+          8:00 a.m. a 6:00 p.m.
+        </h4>
+        <h4>
+          Lunes a Sábado
+        </h4>
       </ion-label>
-      <ion-button color="medium" (click)="onClick()"  shape="round">
-        Enviar
-      </ion-button>
     </ion-item>
+    <form [formGroup]="loginForm">
+      <ion-item lines="full">
+        <ion-label>
+          <h1>
+            Contáctenos
+          </h1>
+        </ion-label>
+        <ion-button color="medium" (click)="submitEmail()"  shape="round">
+          Enviar
+        </ion-button>
+      </ion-item>
 
-
-    <ion-row>
-      <ion-col size="12">
-        <ion-item lines="none">
-          <ion-label>Nombre</ion-label>
-          <ion-input type="text" placeholder="">
-          </ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col size="12">
-        <ion-item lines="none">
-          <ion-label>Teléfono</ion-label>
-          <ion-input type="text" placeholder="">
-          </ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col size="12">
+      <ion-row>
+        <ion-col size="12">
           <ion-item lines="none">
-            <ion-label>Correo</ion-label>
-            <ion-input type="text" placeholder="">
+            <ion-label>Nombre</ion-label>
+            <ion-input      
+            type="text"
+            formControlName="Nombre"
+            autofocus="true"
+            required>
             </ion-input>
           </ion-item>
-      </ion-col>
-    </ion-row>
+        </ion-col>
+      </ion-row>
 
-    <ion-row>
-      <ion-col size="12">
-        <ion-item lines="none">
-          <ion-label>Mensaje</ion-label>
-          <ion-input type="text" placeholder="">
-          </ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-  <!-- </ion-item> -->
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-label>Teléfono</ion-label>
+            <ion-input      
+            type="text"
+            formControlName="Telefono"
+            autofocus="true"
+            required>
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="12">
+            <ion-item lines="none">
+              <ion-label>Correo</ion-label>
+              <ion-input      
+              type="text"
+              formControlName="Correo"
+              autofocus="true"
+              required>
+              </ion-input>
+            </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-label>Mensaje</ion-label>
+            <ion-input
+            type="text"
+            formControlName="Mensaje"
+            autofocus="true"
+            required>
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+    </form>
+
 
   </ion-list>
 
